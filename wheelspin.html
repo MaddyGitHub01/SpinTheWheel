@@ -92,7 +92,13 @@
                     {"label":"",  "value":11,  "question":"Try to lick your elbow while singing an alphabet"}, // padding
                     {"label":"",  "value":12,  "question":"Any 2 movie dialogues"}, //font-family
                     {"label":"",  "value":13,  "question":"Translate this dialogue in English: जली को आग कहते हैं, बुझी को राख कहते हैं, जिस राख से बारूद बने, उसे विश्वनाथ करते हैं।"},
-                    {"label":"",  "value":14,  "question":"Get a spoon in your mouth and give your introduction"} //font-weight
+                    {"label":"",  "value":14,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":15,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":16,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":17,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":18,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":19,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":20,  "question":"Get a spoon in your mouth and give your introduction"}
                 
         ];
         var svg = d3.select('#chart')
@@ -124,7 +130,7 @@
                 d.innerRadius = 0;
                 d.outerRadius = r;
                 d.angle = (d.startAngle + d.endAngle)/2;
-                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -14) +")";
+                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -20) +")";
             })
             .attr("text-anchor", "end")
             .text( function(d, i) {
