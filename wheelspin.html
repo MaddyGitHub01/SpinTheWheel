@@ -98,7 +98,17 @@
                     {"label":"",  "value":17,  "question":"Get a spoon in your mouth and give your introduction"},
                     {"label":"",  "value":18,  "question":"Get a spoon in your mouth and give your introduction"},
                     {"label":"",  "value":19,  "question":"Get a spoon in your mouth and give your introduction"},
-                    {"label":"",  "value":20,  "question":"Get a spoon in your mouth and give your introduction"}
+                    {"label":"",  "value":20,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":21,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":22,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":23,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":24,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":25,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":26,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":27,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":28,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":29,  "question":"Get a spoon in your mouth and give your introduction"},
+                    {"label":"",  "value":30,  "question":"Get a spoon in your mouth and give your introduction"}
                 
         ];
         var svg = d3.select('#chart')
@@ -130,7 +140,7 @@
                 d.innerRadius = 0;
                 d.outerRadius = r;
                 d.angle = (d.startAngle + d.endAngle)/2;
-                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -20) +")";
+                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -30) +")";
             })
             .attr("text-anchor", "end")
             .text( function(d, i) {
